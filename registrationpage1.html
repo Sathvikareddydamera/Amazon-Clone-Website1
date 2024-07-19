@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <!-- Link to your CSS file for styling -->
+    <link rel="stylesheet" href="styles1.css">
+    <style>
+    .amazon-logo {
+        text-align: center;
+        position:absolute; 
+        top: 0px; 
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .amazon-logo img {
+        width: 240px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="amazon-logo">
+            <img src="https://m.media-amazon.com/images/G/31/social_share/amazon_logo._CB633266945_.png" alt="Amazon Logo"> 
+        </div>
+        <h2>Create Account</h2>
+        <form action="registration_handler.php" method="POST">
+            <label for="fullname">Your Name</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" minlength="6" placeholder="At least 6 characters" required>
+
+            <label for="confirm_password">Confirm password</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+
+            <button type="submit">Create Your Amazon Account</button>
+        </form>
+        <p>Already have an account? <a href="loginpage1.html">Login</a></p>
+    </div>
+</body>
+</html>
